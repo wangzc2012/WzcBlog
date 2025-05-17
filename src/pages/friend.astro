@@ -1,0 +1,110 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Icon } from "astro-icon/components";
+import MainCard from "@/components/MainCard.astro";
+import LinkCard from "@/components/mdx/LinkCard.astro";
+import FriendCard from "@/components/mdx/FriendCard.astro";
+---
+
+<BaseLayout title="Friends">
+  <MainCard
+    title="Friends"
+    description="Friends of Wangzc2012."
+    textOverlay="FRIENDS"
+    infoIcon="lucide:link"
+  >
+    <div class="space-y-10">
+      <!-- Friends Section -->
+      <section>
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+          <Icon name="lucide:users" class="w-6 h-6 text-primary" />
+          <span>Friends</span>
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <FriendCard
+            name="tzzl3035"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1030559.png"
+            description="人生自古谁无死，不如自挂东南枝。/ 个人博客: tzzl.site / 电子邮件: tzzl3035@tzzl.site / 一名忠实的 vim 使用者"
+            url="https://tzzl.site/"
+            type="friend"
+          />
+          <FriendCard
+            name="Fish_redflying"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1029122.png"
+            description="生生不息的激荡||zc壶关"
+            url="https://fishingblog.netlify.app/"
+            type="friend"
+          />
+          <FriendCard
+            name="Kun_is_Me"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/973540.png"
+            description="只因虽寿，犹有逝时。 腾鸡乘雾，终为答辩。 老Zhin伏枥，志在2.5里。 徐坤暮年，壮心没Zhin。 只因之期，不但在坤。homo之福，可得趋势。"
+            url="https://www.luogu.com.cn/user/973540"
+            type="friend"
+          />
+          <FriendCard
+            name="NC20061226"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/973540.png"
+            description="雄关漫道真如铁，而今迈步从头越。从头越，苍山如海，残阳如血 || ENTJ-T || 要掉蓝了"
+            url="https://www.luogu.com.cn/user/965351"
+            type="friend"
+          />
+          <FriendCard
+            name="AwuOi"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1213769.png"
+            description="刷刷刷刷刷刷刷刷刷刷题 | 励志当上游戏开发者（像 M28 一样）| 打打打打打比赛 | 估值……"
+            url="https://www.luogu.com.cn/user/1213769"
+            type="friend"
+          />
+          <FriendCard
+            name="Gausswing"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1103540.png"
+            description="无言以对"
+            url="https://www.luogu.com.cn/user/1103540"
+            type="friend"
+          />
+          <FriendCard
+            name="X_Sbr"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1084561.png"
+            description="这个家伙就是个家伙，TA该留下的都留下了"
+            url="https://www.luogu.com.cn/user/1084561"
+            type="friend"
+          />
+          <FriendCard
+            name="Auroracy"
+            avatar="/image/Auroracy.jpg"
+            description="Auroracy"
+            url=""
+            type="friend"
+          />
+          <FriendCard
+            name="鱼"
+            avatar="/image/鱼.jpg"
+            description="鱼"
+            url=""
+            type="friend"
+          />
+        </div>
+      </section>
+
+      <div class="divider my-8">
+        <Icon name="lucide:heart" class="w-10 h-10 text-primary" />
+      </div>
+
+      <div class="text-center">
+        <p class="text-base-content/80 mb-4">
+          Want to be featured on this page? Feel free to reach out or contribute to the project!
+        </p>
+        <a
+          href="https://github.com/wangzc2012/Blog"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary gap-2"
+        >
+          <Icon name="lucide:github" class="w-5 h-5" />
+          <span>Contribute on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </MainCard>
+</BaseLayout>
