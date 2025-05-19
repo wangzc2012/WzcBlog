@@ -1,0 +1,174 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Icon } from "astro-icon/components";
+import MainCard from "@/components/MainCard.astro";
+import FriendCard from "@/components/mdx/FriendCard.astro";
+
+import Collapse from "@/components/mdx/Collapse.astro";
+import Diff from "@/components/mdx/Diff.astro";
+import Error from "@/components/mdx/Error.astro";
+import Info from "@/components/mdx/Info.astro";
+import Kbd from "@/components/mdx/Kbd.astro";
+import Success from "@/components/mdx/Success.astro";
+import Warning from "@/components/mdx/Warning.astro";
+import TimeLine from "@/components/mdx/TimeLine.astro";
+import LinkCard from "@/components/mdx/LinkCard.astro";
+---
+
+
+<BaseLayout title="team">
+  <MainCard
+    title="team"
+    description="The team that wangzc2012 joined."
+    textOverlay="Team"
+    infoIcon="lucide:link"
+  >
+
+  <LinkCard
+    title="QST"
+    desc="潜水艇团队，欢迎加入！"
+    url="https://www.luogu.com.cn/team/78082"
+    img="/image/QST.svg"
+  />
+  <br>
+  <Collapse title="Meet the team.">
+    <Info> 专注知识共享：在潜水艇团队官方网站，我们相信知识的力量。通过精心整理的文档，您可以轻松获取团队的最新动态和技术分享，相信这会对您有所帮助。 </Info> <br>
+    <Info> 开源共享，共同进步：我们鼓励开源精神，这意味着您可以使用网站的工具，学习知识。 </Info> <br>
+    <Info> 探索潜水艇团队官方网站：在这里，我们为您提供丰富的资源、工具和空间，帮助您深入了解潜水艇团队的各个方面，以便于更好地融入团队。 </Info> <br>
+    <Info> 加入我们，共创辉煌：潜水艇团队全称“潜水艇，水挺浅”, 是一个充满活力和创新精神的集体。 我们诚邀您的加入，一起探索未知，共同学习进步。 </Info>
+  </Collapse>
+  <br>
+
+    <div class="space-y-10">
+      <!-- Friends Section -->
+      <section>
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+          <Icon name="lucide:users" class="w-6 h-6 text-primary" />
+          <span>Members</span>
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <FriendCard
+            name="Fish_redflying"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1029122.png"
+            description="生生不息的激荡||zc壶关"
+            url="https://fishingblog.netlify.app/"
+            type="tech"
+          />
+          
+          <FriendCard
+            name="wangzc2012"
+            avatar="/profile.png"
+            description="这只蒟蒻很懒，什么也没有留下"
+            url="https://wzcblog.netlify.app/"
+            type="tech"
+          />
+
+          <FriendCard
+            name="tzzl3035"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1030559.png"
+            description="人生自古谁无死，不如自挂东南枝。/ 个人博客: tzzl.site / 电子邮件: tzzl3035@tzzl.site / 一名忠实的 vim 使用者"
+            url="https://tzzl.site/"
+            type="tech"
+          />
+          
+          <FriendCard
+            name="Kun_is_Me"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/973540.png"
+            description="只因虽寿，犹有逝时。 腾鸡乘雾，终为答辩。 老Zhin伏枥，志在2.5里。 徐坤暮年，壮心没Zhin。 只因之期，不但在坤。homo之福，可得趋势。"
+            url="https://www.luogu.com.cn/user/973540"
+            type="tech"
+          />
+          <FriendCard
+            name="NC20061226"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/965351.png"
+            description="雄关漫道真如铁，而今迈步从头越。从头越，苍山如海，残阳如血 || ENTJ-T || 要掉蓝了"
+            url="https://www.luogu.com.cn/user/965351"
+            type="tech"
+          />
+          <FriendCard
+            name="AwuOi"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1213769.png"
+            description="刷刷刷刷刷刷刷刷刷刷题 | 励志当上游戏开发者（像 M28 一样）| 打打打打打比赛 | 估值……"
+            url="https://www.luogu.com.cn/user/1213769"
+            type="tech"
+          />
+          <FriendCard
+            name="riyueemo"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1368649.png"
+            description="小小的果子狸"
+            url="https://www.luogu.com.cn/user/1368649"
+            type="tech"
+          />
+          <FriendCard
+            name="lzysxfcs"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1231862.png"
+            description="一个小学永远没毕业的大学生"
+            url="https://www.luogu.com.cn/user/1231862"
+            type="tech"
+          />
+          <FriendCard
+            name="Somnr"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1084197.png"
+            description="楽園(はめつ)への花道をいざ照らせ"
+            url="https://www.luogu.com.cn/user/1084197"
+            type="tech"
+          />
+          <FriendCard
+            name="ZhJY_IKUN"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1372138.png"
+            description="类似IKUN的深海章鱼"
+            url="https://www.luogu.com.cn/user/1372138"
+            type="tech"
+          />
+          <FriendCard
+            name="____HOW_TO_USE___"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1135900.png"
+            description="互关，一月一看"
+            url="https://www.luogu.com.cn/user/1135900"
+            type="tech"
+          />
+          <FriendCard
+            name="wyc208"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/945386.png"
+            description="前途无量 星辰大海"
+            url="https://www.luogu.com.cn/user/945386"
+            type="tech"
+          />
+          <FriendCard
+            name="20130303zjl"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1133505.png"
+            description="炸了"
+            url="https://www.luogu.com.cn/user/1133505"
+            type="tech"
+          />
+          <FriendCard
+            name="wmx2013"
+            avatar="https://cdn.luogu.com.cn/upload/usericon/1267624.png"
+            description="圆角矩形网吧"
+            url="https://www.luogu.com.cn/user/1267624"
+            type="tech"
+          />
+        </div>
+      </section>
+
+      <div class="divider my-8">
+        <Icon name="lucide:heart" class="w-10 h-10 text-primary" />
+      </div>
+
+      <div class="text-center">
+        <p class="text-base-content/80 mb-4">
+          Want to be featured on this page? Feel free to reach out or contribute to the team!
+        </p>
+        <a
+          href="https://github.com/wangzc2012/Blog"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary gap-2"
+        >
+          <Icon name="lucide:github" class="w-5 h-5" />
+          <span>Contribute on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </MainCard>
+</BaseLayout>

@@ -60,6 +60,11 @@ site:
       href: /friend
       svg: "material-symbols:supervisor-account-outline-rounded"
       target: _self
+    - id: team
+      text: Team
+      href: /team
+      svg: "ri:team-line"
+      target: _self
 
 # 用户的个人信息
 user:
